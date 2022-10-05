@@ -6,7 +6,7 @@ const menuMovile= document.querySelector(".menu");
 const menuMobileCambio= document.querySelector(".mobile-menu");
 const destopMenu= document.querySelector(".desktop-menu");
 const destopCarrito= document.querySelector(".navbar-shopping-cart");
-const destopProductos= document.querySelector(".product-detail");
+const destopProductos= document.querySelector("#shoppingCartContainer");
 const cardsContainer=document.querySelector(".cards-container");
 
 
@@ -14,6 +14,7 @@ menuEmail.addEventListener('click', togleShowDestopMenu);
 menuMovile.addEventListener('click', togleShowMenu);
 destopCarrito.addEventListener('click', togleShowProductos);
 
+//shoppingCartContainer
 function togleShowDestopMenu() {
 
     const isCarritoClose=destopProductos.classList.contains('active');
